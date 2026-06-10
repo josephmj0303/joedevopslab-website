@@ -304,7 +304,7 @@ section {
 .section-subtitle {
     font-size: 1.2rem;
     color: var(--text-secondary);
-    max-width: 500px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -1371,6 +1371,28 @@ section {
 .tag:hover {
     background: rgba(255, 140, 66, 0.25);
     border-color: #ff8c42;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.portfolio-links {
+    margin-top: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #FF9900;
+    border: 1px solid rgba(255,153,0,0.4);
+    background: rgba(255,153,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #FF9900;
     color: #ffffff;
     transform: translateY(-2px);
 }
