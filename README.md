@@ -121,6 +121,10 @@ Key Highlights:
 * Security Integration
 * Infrastructure Automation
 
+Repository:
+
+🔗 https://github.com/josephmj0303/emart-devops-platform
+
 ---
 
 ### 📊 Monitoring & Observability Stack
@@ -137,6 +141,10 @@ Features:
 * Application Metrics
 * Alerting
 * Dashboards
+
+Repository:
+
+🔗 https://github.com/josephmj0303/monitoring-and-observability
 
 ---
 
