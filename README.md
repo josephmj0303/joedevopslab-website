@@ -28,6 +28,10 @@ Visit:
 
 👉 **https://joedevopslab.xyz**
 
+## Website Preview
+
+![Joe DevOps Lab](images/portfolio-preview.png)
+
 ---
 
 ## 👨‍💻 About Me
