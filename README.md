@@ -22,7 +22,7 @@
 
 This repository contains the source code for my personal portfolio website.
 
-The website showcases my professional experience, DevOps projects, technical skills, certifications, and cloud-native engineering journey.
+The website showcases my professional experience, DevOps projects, technical skills and cloud-native engineering journey.
 
 Visit:
 
@@ -79,7 +79,7 @@ I enjoy building reliable, scalable, and automated platforms that improve softwa
 
 * Prometheus
 * Grafana
-* Alertmanager
+* Slack
 
 ### Security & Quality
 
@@ -133,7 +133,8 @@ Monitoring platform built using:
 
 * Prometheus
 * Grafana
-* Alertmanager
+* Loki
+* Grafana Alloy
 
 Features:
 
@@ -154,7 +155,7 @@ Repository:
 * Professional Portfolio Layout
 * Project Showcase
 * Career Timeline
-* Skills & Certifications
+* Skills & Technologies
 * Contact Information
 * Custom Domain Integration
 
