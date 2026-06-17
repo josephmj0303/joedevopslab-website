@@ -1382,25 +1382,22 @@ section {
 .portfolio-more {
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
 .view-projects-btn {
     display: inline-block;
-    padding: 14px 30px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #ffffff;
-    background: linear-gradient(135deg, #FF9900, #ffb84d);
-    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FF9900;
     text-decoration: none;
+    border: 2px solid #FF9900;
+    padding: 12px 30px;
+    border-radius: 50px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
 }
 
 .view-projects-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 153, 0, 0.5);
+    background: #FF9900;
     color: #ffffff;
 }
 
