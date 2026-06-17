@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Joe DevOps Lab</title>
+
+    <link rel="stylesheet" href="tooplate-titan-style.css">
+
+    <style>
+        .projects-hero {
+            text-align: center;
+            padding: 120px 20px 60px;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-hero p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.2rem;
+            color: #cfcfcf;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .stat-badge {
+            padding: 10px 20px;
+            border: 1px solid #ff9900;
+            border-radius: 30px;
+            color: #ff9900;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-card h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            line-height: 1.8;
+        }
+
+        .project-buttons {
+            margin-top: 20px;
+        }
+
+        .project-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            background: #ff9900;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            border: 1px solid #ff9900;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: #ff9900;
+        }
+
+        .github-cta {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .github-cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ff9900;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <div class="logo">
+            Joe DevOps Lab
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<section class="projects-hero">
+
+    <h1>DevOps Project Portfolio</h1>
+
+    <p>
+        A collection of production-style DevOps, Cloud, Kubernetes,
+        GitOps, CI/CD, Monitoring and Infrastructure Automation projects
+        built to demonstrate real-world platform engineering practices.
+    </p>
+
+    <div class="stats-row">
+
+        <div class="stat-badge">10+ Projects</div>
+
+        <div class="stat-badge">AWS & Azure</div>
+
+        <div class="stat-badge">GitOps & Kubernetes</div>
+
+        <div class="stat-badge">Infrastructure as Code</div>
+
+        <div class="stat-badge">CI/CD Automation</div>
+
+        <div class="stat-badge">Monitoring & Observability</div>
+
+    </div>
+
+</section>
+
+<section class="projects-container">
+
+    <div class="project-card">
+
+        <h2>🚀 VProfile GitOps Platform on AWS EKS</h2>
+
+        <p>
+            Production-grade GitOps implementation of the VProfile application on AWS EKS using Terraform, ArgoCD, GitHub Actions, Helm, Amazon ECR, SonarQube and Slack notifications.
+        </p>
+
+        <div class="project-buttons">
+            <a href="https://github.com/josephmj0303/vprofile-app" target="_blank">
+                GitHub Repository
+            </a>
+        </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <h2>🛒 Emart DevOps Platform</h2>
+
+        <p>
+            End-to-end DevOps implementation of a microservices-based eCommerce platform deployed on Kubernetes using GitOps, CI/CD, monitoring and security best practices.
+        </p>
+
+        <div class="project-buttons">
+            <a href="https://github.com/josephmj0303/emart-devops-platform" target="_blank">
+                GitHub Repository
+            </a>
+        </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <h2>📊 Monitoring & Observability Stack</h2>
+
+        <p>
+            Centralized monitoring platform using Prometheus, Grafana, Loki and Alertmanager with dashboards, alerting and infrastructure visibility.
+        </p>
+
+        <div class="project-buttons">
+            <a href="https://github.com/josephmj0303" target="_blank">
+                Repository
+            </a>
+        </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <h2>☁️ AWS Cloud Native Ecommerce Platform</h2>
+
+        <p>
+            Cloud-native ecommerce infrastructure built using AWS services, Terraform, Auto Scaling, ALB, CloudFront, S3 and RDS.
+        </p>
+
+    </div>
+
+    <div class="project-card">
+
+        <h2>🔵 Azure DevOps Platform</h2>
+
+        <p>
+            Migration and deployment of ecommerce workloads on Azure App Service, PostgreSQL Flexible Server and Static Web Apps.
+        </p>
+
+    </div>
+
+    <div class="project-card">
+
+        <h2>⚙️ AWS EKS Dotnet Microservices Platform</h2>
+
+        <p>
+            Kubernetes-based deployment platform for .NET microservices running on AWS EKS with persistent storage and stateful services.
+        </p>
+
+    </div>
+
+    <div class="project-card">
+
+        <h2>🔧 Jenkins SonarQube Nexus Platform</h2>
+
+        <p>
+            CI/CD platform integrating Jenkins, SonarQube, Nexus Repository Manager, Docker and deployment automation.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="tech-stack">
+
+    <h2>Technology Stack</h2>
+
+    <div class="tech-badges">
+
+        <span class="tech-badge">AWS</span>
+        <span class="tech-badge">Azure</span>
+        <span class="tech-badge">Kubernetes</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">Terraform</span>
+        <span class="tech-badge">Helm</span>
+        <span class="tech-badge">ArgoCD</span>
+        <span class="tech-badge">GitHub Actions</span>
+        <span class="tech-badge">Jenkins</span>
+        <span class="tech-badge">Prometheus</span>
+        <span class="tech-badge">Grafana</span>
+        <span class="tech-badge">Loki</span>
+        <span class="tech-badge">SonarQube</span>
+        <span class="tech-badge">Trivy</span>
+        <span class="tech-badge">Linux</span>
+
+    </div>
+
+</section>
+
+<section class="github-cta">
+
+    <h2>Explore the Source Code</h2>
+
+    <p>
+        All projects are maintained in public GitHub repositories with documentation,
+        architecture diagrams, deployment workflows and implementation details.
+    </p>
+
+    <a href="https://github.com/josephmj0303" target="_blank">
+        Visit GitHub Portfolio →
+    </a>
+
+</section>
+
+</body>
+</html>
