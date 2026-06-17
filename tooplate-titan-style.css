@@ -1379,6 +1379,28 @@ section {
     margin-top: 1rem;
 }
 
+.portfolio-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.view-projects-btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FF9900;
+    text-decoration: none;
+    border: 2px solid #FF9900;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.view-projects-btn:hover {
+    background: #FF9900;
+    color: #ffffff;
+}
+
 .project-link {
     display: inline-block;
     padding: 8px 14px;
