@@ -1427,6 +1427,66 @@ section {
     transform: translateY(-2px);
 }
 
+.project-hero {
+    padding: 140px 20px 60px;
+    text-align: center;
+}
+
+.project-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.project-hero p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.project-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.project-section h2 {
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.architecture-image {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #FF9900;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid #FF9900;
+    color: #FF9900;
+}
+
+.btn-secondary:hover {
+    background: #FF9900;
+    color: white;
+}
+
 /* Github Portfolio */
 .github-card {
     max-width: 800px;
