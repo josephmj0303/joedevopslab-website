@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Joe DevOps Lab</title>
+
+    <link rel="stylesheet" href="../tooplate-titan-style.css">
+
+    <style>
+        .home-btn {
+            color: #FF9900;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #FF9900;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background: #FF9900;
+            color: #ffffff;
+        }
+        .projects-hero {
+            text-align: center;
+            padding: 120px 20px 60px;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-hero p {
+            max-width: 1000px;
+            margin: auto;
+            font-size: 1.2rem;
+            color: #cfcfcf;
+        }
+
+        .project-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+        }
+
+        .architecture-image {
+            width: 85%;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .stat-badge {
+            padding: 10px 20px;
+            border: 1px solid #ff9900;
+            border-radius: 30px;
+            color: #ff9900;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-card h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .project-buttons {
+            margin-top: 20px;
+        }
+
+        .project-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            background: #ff9900;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            border: 1px solid #ff9900;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: #ff9900;
+        }
+
+        .github-cta {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .github-cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ff9900;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">☸</div>
+                <div class="logo-text">Joe DevOps Lab</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="project-hero">
+    <h1>Monitoring & Observability Stack</h1>
+
+    <p>
+        Production-grade monitoring setup for a Python Flask application.
+    </p>
+</section>
+
+<section class="project-section">
+
+    <h2>Architecture</h2>
+
+    <img src="../images/monitoring-architecture.png"
+         alt="Monitoring & Observability Stack Architecture"
+         class="architecture-image">
+
+</section>
+
+<section class="project-section">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        This project demonstrates a production-style observability platform deployed on AWS EC2 instances without using containers.
+        It implements metrics, logs, visualization, and alerting for a Python Flask application using modern tooling.
+    </p>
+
+</section>
+
+<section class="project-section">
+
+<h2>Technology Stack</h2>
+
+<div class="tech-badges">
+
+<span class="tech-badge">Prometheus</span>
+<span class="tech-badge">Grafana</span>
+<span class="tech-badge">Loki</span>
+<span class="tech-badge">Alertmanager</span>
+<span class="tech-badge">Node Exporter</span>
+
+</div>
+
+</section>
+
+<section class="project-section">
+
+<h2>Key Features</h2>
+<ul>
+<li>Infrastructure provisioning using Terraform</li>
+<li>AWS EKS managed Kubernetes cluster</li>
+<li>GitHub Actions based CI/CD pipelines</li>
+<li>SonarQube quality gate validation</li>
+<li>Docker image build and publishing to Amazon ECR</li>
+<li>Helm-based Kubernetes deployments</li>
+<li>ArgoCD Auto Sync and Self-Healing</li>
+<li>AWS Load Balancer Controller (ALB Ingress)</li>
+<li>IRSA (IAM Roles for Service Accounts)</li>
+<li>Slack deployment notifications</li>
+</ul>
+
+</section>
+
+<section class="project-section project-buttons">
+
+<a href="https://github.com/josephmj0303/monitoring-and-observability"
+   target="_blank"
+   class="btn-primary">
+
+   GitHub Repository
+
+</a>
+
+<a href="../projects.html"
+   class="btn-secondary">
+
+   ← Back to Projects
+
+</a>
+
+</section>
+
+</body>
+</html>
+
