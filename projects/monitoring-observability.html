@@ -192,10 +192,10 @@
     </nav>
 
 <section class="project-hero">
-    <h1>Monitoring & Observability Stack</h1>
+    <h1>Monitoring & Observability Platform</h1>
 
     <p>
-        Production-grade monitoring setup for a Python Flask application.
+        Production-ready observability platform built on AWS EC2 using Prometheus, Grafana, Loki, Grafana Alloy, Python Flask, and Slack notifications for real-time monitoring, log aggregation, visualization, and alerting.
     </p>
 </section>
 
@@ -207,6 +207,17 @@
          alt="Monitoring & Observability Stack Architecture"
          class="architecture-image">
 
+    <h2>Architecture Highlights</h2>
+    <ul>
+    <li>Grafana Alloy collects application and system telemetry.</li>
+    <li>Prometheus stores and queries time-series metrics.  </li>
+    <li>Loki centralizes and indexes application logs.</li>
+    <li>Grafana provides unified dashboards for metrics and logs.</li>
+    <li>Slack receives alerts generated from monitoring rules.</li>
+    <li>Python Flask application simulates production workloads.</li>
+    <li>AWS EC2 hosts the complete observability stack.</li>   
+    </ul>
+
 </section>
 
 <section class="project-section">
@@ -214,8 +225,10 @@
     <h2>Project Overview</h2>
 
     <p>
-        This project demonstrates a production-style observability platform deployed on AWS EC2 instances without using containers.
-        It implements metrics, logs, visualization, and alerting for a Python Flask application using modern tooling.
+        This project demonstrates the implementation of a modern Monitoring and Observability Platform designed to provide end-to-end visibility into application and infrastructure health.
+        The platform collects metrics using Prometheus, aggregates logs using Loki, and visualizes operational data through Grafana dashboards. Grafana Alloy serves as the telemetry collection agent, while a Python Flask application generates real-world monitoring data and log events.
+        The solution is deployed on AWS EC2 and integrates Slack notifications for proactive alerting, enabling rapid detection and response to operational issues.
+        The project showcases key observability concepts including metrics collection, centralized logging, dashboard visualization, alert management, and real-time monitoring workflows commonly used in production environments.
     </p>
 
 </section>
@@ -229,8 +242,10 @@
 <span class="tech-badge">Prometheus</span>
 <span class="tech-badge">Grafana</span>
 <span class="tech-badge">Loki</span>
-<span class="tech-badge">Alertmanager</span>
-<span class="tech-badge">Node Exporter</span>
+<span class="tech-badge">Grafana Alloy</span>
+<span class="tech-badge">Python Flask</span>
+<span class="tech-badge">AWS EC2</span>
+<span class="tech-badge">Slack</span>
 
 </div>
 
@@ -240,13 +255,16 @@
 
 <h2>Key Features</h2>
 <ul>
-<li>VM-based observability (no Docker)</li>
-<li>Grafana Alloy unified pipeline</li>
-<li>Remote-write metrics architecture</li>
-<li>Centralized logging system</li>
-<li>Slack alerting integration</li>
-<li>Infrastructure as Code (Terraform)</li>
-<li>CI/CD pipeline with GitHub Actions</li>
+<li>Real-Time Infrastructure Monitoring</li>
+<li>Application Metrics Collection with Prometheus</li>
+<li>Centralized Log Aggregation using Loki</li>
+<li>Telemetry Collection with Grafana Alloy</li>
+<li>Interactive Grafana Dashboards</li>
+<li>Python Flask Sample Application Monitoring</li>
+<li>AWS EC2 Based Deployment Architecture</li>
+<li>Slack Alert Notifications</li>
+<li>Operational Health Visualization</li>
+<li>Production-Style Observability Workflow</li>
 </ul>
 
 </section>
