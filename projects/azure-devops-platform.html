@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Joe DevOps Lab</title>
+
+    <link rel="stylesheet" href="../tooplate-titan-style.css">
+
+    <style>
+        .home-btn {
+            color: #FF9900;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #FF9900;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background: #FF9900;
+            color: #ffffff;
+        }
+        .projects-hero {
+            text-align: center;
+            padding: 120px 20px 30px;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-hero p {
+            text-align: left;
+            max-width: 1100px;
+            margin: auto;
+            font-size: 1.5rem;
+            color: #cfcfcf;
+        }
+
+        .project-section {
+            max-width: 1100px;
+            text-align: left;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+        }
+
+        .project-section ul {
+            padding-left: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .project-section li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .architecture-image {
+            width: 85%;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .stat-badge {
+            padding: 10px 20px;
+            border: 1px solid #ff9900;
+            border-radius: 30px;
+            color: #ff9900;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-card h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .project-buttons {
+            margin-top: 20px;
+        }
+
+        .project-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            background: #ff9900;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            border: 1px solid #ff9900;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: #ff9900;
+        }
+
+        .github-cta {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .github-cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ff9900;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">☸</div>
+                <div class="logo-text">Joe DevOps Lab</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="project-hero">
+    <h1>eCommerce Azure DevOps Platform</h1>
+
+    <p>
+        Production-style migration of an eCommerce application from a VPS environment to Microsoft Azure PaaS using Terraform, GitHub Actions, Azure App Services, PostgreSQL Flexible Server, and modern DevOps automation practices.
+    </p>
+</section>
+
+<section class="project-section">
+
+    <h2>Migration Architecture</h2>
+
+    <img src="../images/migration-overview.png"
+         alt="E-Commerce Azure Migration Architecture"
+         class="architecture-image">
+</section>
+
+<section class="project-section">
+
+    <h2>Architecture</h2>
+
+    <img src="../images/aws-ecommerce-architecture.png"
+         alt="E-Commerce Azure DevOps Platform Architecture"
+         class="architecture-image">
+</section>
+
+<section class="project-section">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        This project demonstrates a real-world cloud migration of an eCommerce
+        application from a traditional VPS-based environment to a modern
+        Microsoft Azure Platform-as-a-Service (PaaS) architecture.
+
+        The solution leverages Terraform for Infrastructure as Code,
+        GitHub Actions for CI/CD automation, Azure App Services for backend
+        applications, Azure Static Web Apps for frontend hosting, and Azure
+        PostgreSQL Flexible Server for managed database services.
+
+        The project focuses on cloud modernization, deployment automation,
+        security hardening, infrastructure provisioning, database migration,
+        and production-ready operational practices.
+    </p>
+
+</section>
+
+<section class="project-section">
+
+<h2>Technology Stack</h2>
+
+<div class="tech-badges">
+
+        <span class="tech-badge">Microsoft Azure</span>
+        <span class="tech-badge">Terraform</span>
+        <span class="tech-badge">GitHub Actions</span>
+        <span class="tech-badge">Azure App Service</span>
+        <span class="tech-badge">Azure Static Web Apps</span>
+        <span class="tech-badge">Azure PostgreSQL Flexible Server</span>
+        <span class="tech-badge">Application Insights</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">Angular</span>
+</div>
+
+</section>
+
+<section class="project-section">
+
+<h2>Key Features</h2>
+<ul>
+     <li>Migration from VPS infrastructure to Azure PaaS architecture</li>
+    <li>Infrastructure provisioning using Terraform</li>
+    <li>Fully automated CI/CD pipelines with GitHub Actions</li>
+    <li>Backend deployment using Azure App Services</li>
+    <li>Frontend deployment using Azure Static Web Apps</li>
+    <li>Managed PostgreSQL database using Azure Flexible Server</li>
+    <li>Automated infrastructure and application deployments</li>
+    <li>Application monitoring using Azure Application Insights</li>
+    <li>Secure secrets and environment variable management</li>
+    <li>PostgreSQL database migration using dump-and-restore strategy</li>
+    <li>HTTPS-enabled production deployments</li>
+    <li>Security-hardened cloud infrastructure and firewall configuration</li>
+    <li>Health check validation within deployment pipelines</li>
+    <li>Production-ready Azure architecture design</li>    
+</ul>
+
+</section>
+
+<section class="project-section">
+
+    <h2>DevOps Highlights</h2>
+    <ul>
+        <li>Designed and implemented Azure PaaS architecture</li>
+        <li>Automated infrastructure provisioning with Terraform</li>
+        <li>Built multi-stage GitHub Actions deployment pipelines</li>
+        <li>Migrated PostgreSQL database from VPS to Azure</li>
+        <li>Implemented secure cloud networking and firewall rules</li>
+        <li>Integrated application monitoring and health validation</li>
+        <li>Managed production-grade deployment workflows</li>
+        <li>Applied cloud security and operational best practices</li>  
+    </ul>
+
+</section>
+
+<section class="project-section">
+
+    <h2>Project Outcome</h2>
+
+    <p>
+        This project demonstrates end-to-end cloud migration, Infrastructure as Code,
+        CI/CD automation, database migration, and production-ready Azure operations.
+        It showcases practical experience with Azure PaaS services, deployment
+        automation, security hardening, and modern cloud-native application delivery.
+    </p>
+
+</section>
+
+<section class="project-section project-buttons">
+    
+<a href="https://github.com/josephmj0303/ecommerce-azure-devops-platform"
+   target="_blank"
+   class="btn-primary">
+
+   GitHub Repository
+
+</a>
+
+<a href="../projects.html"
+   class="btn-secondary">
+
+   ← Back to Projects
+
+</a>
+
+</section>
+
+</body>
+</html>
