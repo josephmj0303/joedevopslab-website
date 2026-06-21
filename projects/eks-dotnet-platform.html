@@ -128,6 +128,26 @@
             font-weight: bold;
         }
 
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        .screenshot-card p {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #fff;
+        }
+
         .tech-stack {
             text-align: center;
             margin-top: 80px;
@@ -296,6 +316,45 @@
     <li>Production-style multi-service repository structure</li>    
 </ul>
 
+</section>
+
+section class="project-section">
+
+    <h2>Screenshots</h2>
+
+<div class="screenshot-grid">
+
+    <div class="screenshot-card">
+        <img src="../images/project-images/ci-cd-workflow.png" alt="">
+        <p>GitHub Actions CI/CD Pipeline</p>
+    </div>
+
+    <div class="screenshot-card">
+        <img src="../images/project-images/eks-cluster.png" alt="">
+        <p>Amazon EKS Cluster Overview</p>
+    </div>
+
+    <div class="screenshot-card">
+        <img src="../images/project-images/k8s-ingress.png" alt="">
+        <p>Kubernetes Services and ALB Ingress</p>
+    </div>
+
+    <div class="screenshot-card">
+        <img src="../images/project-images/k8s-pods.png" alt="">
+        <p>Microservices Running on EKS</p>
+    </div>
+
+    <div class="screenshot-card">
+        <img src="../images/project-images/school-app.png" alt="">
+        <p>School Application Deployment</p>
+    </div>
+
+    <div class="screenshot-card">
+        <img src="../images/project-images/vivahadeepam-app.png" alt="">
+        <p>Vivahadeepam Application Deployment</p>
+    </div>
+
+</div>
 </section>
 
 <section class="project-section">
