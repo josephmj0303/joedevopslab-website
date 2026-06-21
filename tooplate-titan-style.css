@@ -310,7 +310,7 @@ section {
 }
 
 .section-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: var(--text-secondary);
     max-width: 900px;
     margin: 0 auto;
@@ -585,6 +585,7 @@ section {
 /* Stats */
 .stats-section {
     display: flex;
+    font-size: 1.0rem;
     justify-content: center;
     gap: 2rem;
     margin-top: 4rem;
@@ -599,6 +600,7 @@ section {
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
+    font-size: 1.2rem;
     min-width: 150px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -946,7 +948,7 @@ section {
 
 .skill-item p {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1.0rem;
 }
 
 .skill-progress {
@@ -1139,6 +1141,7 @@ section {
 
 .timeline-description {
     color: rgba(255,255,255,0.9);
+    font-size: 1.0rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
 }
@@ -1154,7 +1157,7 @@ section {
     background: rgba(255, 140, 66, 0.15);
     border: 1px solid rgba(255, 140, 66, 0.4);
     border-radius: 15px;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: #ffcc99;
     transition: all 0.3s ease;
 }
@@ -1176,7 +1179,7 @@ section {
     gap: 0.5rem;
     margin-bottom: 0.5rem;
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 1.0rem;
 }
 
 .timeline-achievement::before {
@@ -1355,6 +1358,7 @@ section {
 
 .portfolio-description {
     color: rgba(255,255,255,0.92);
+    font-size: 1.0rem;
     margin-bottom: 1.5rem;
     line-height: 1.7;
 }
@@ -1370,7 +1374,7 @@ section {
     background: rgba(255, 140, 66, 0.15);
     border: 1px solid rgba(255, 140, 66, 0.4);
     border-radius: 15px;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #ffcc99;
     transition: all 0.3s ease;
@@ -1394,7 +1398,7 @@ section {
 
 .view-projects-btn {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #FF9900;
     text-decoration: none;
@@ -1448,7 +1452,7 @@ section {
 .project-section {
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     padding: 2rem;
 }
 
@@ -1576,6 +1580,7 @@ section {
 
 .contact-info p {
     color: var(--text-secondary);
+    font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -1585,7 +1590,7 @@ section {
 
 .contact-details h4 {
     color: #FF9900;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
     border-bottom: 2px solid rgba(255,153,0,0.4);
@@ -1606,6 +1611,7 @@ section {
 .contact-details p {
     padding-left: 1rem;
     color: var(--text-secondary);
+    font-size: 1rem;
 }
 
 .form-group {
