@@ -128,24 +128,38 @@
             font-weight: bold;
         }
 
+        /* Screenshot section */
         .screenshot-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 25px;
             margin-top: 30px;
         }
 
-        .screenshot-card img {
-            width: 100%;
-            border-radius: 10px;
-            border: 1px solid #444;
+        .screenshot-item {
+            text-align: center;
         }
 
-        .screenshot-card p {
-            text-align: center;
-            margin-top: 10px;
-            font-weight: 600;
-            color: #fff;
+        .screenshot-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .tech-stack {
@@ -318,7 +332,7 @@
 
 </section>
 
-section class="project-section">
+<section class="project-section">
 
     <h2>Screenshots</h2>
 
