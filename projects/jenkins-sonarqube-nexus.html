@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Joe DevOps Lab</title>
+
+    <link rel="stylesheet" href="../tooplate-titan-style.css">
+
+    <style>
+        .home-btn {
+            color: #FF9900;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #FF9900;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background: #FF9900;
+            color: #ffffff;
+        }
+        .projects-hero {
+            text-align: center;
+            padding: 120px 20px 30px;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-hero p {
+            text-align: left;
+            max-width: 1100px;
+            margin: auto;
+            font-size: 1.5rem;
+            color: #cfcfcf;
+        }
+
+        .project-section {
+            max-width: 1100px;
+            text-align: left;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+        }
+
+        .project-section ul {
+            padding-left: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .project-section li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .architecture-image {
+            width: 85%;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .stat-badge {
+            padding: 10px 20px;
+            border: 1px solid #ff9900;
+            border-radius: 30px;
+            color: #ff9900;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-card h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .project-buttons {
+            margin-top: 20px;
+        }
+
+        .project-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            background: #ff9900;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            border: 1px solid #ff9900;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: #ff9900;
+        }
+
+        .github-cta {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .github-cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ff9900;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">☸</div>
+                <div class="logo-text">Joe DevOps Lab</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="project-hero">
+    <h1>Jenkins CI Platform with SonarQube, Nexus & Slack</h1>
+
+    <p>
+        Production-style Continuous Integration platform implementing automated builds, code quality analysis, artifact management, and team notifications using Jenkins, SonarQube, Nexus Repository, and Slack.
+    </p>
+</section>
+
+<section class="project-section">
+
+    <h2>Architecture</h2>
+
+    <img src="../images/jenkins-ci-architecture.png"
+         alt="Jenkins CI Platform Architecture"
+         class="architecture-image">
+</section>
+
+<section class="project-section">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        This project demonstrates a complete enterprise-style Continuous
+        Integration (CI) pipeline built using Jenkins, SonarQube, Nexus
+        Repository, Maven, GitHub Webhooks, and Slack Notifications.
+
+        The platform automates the software delivery workflow from source
+        code commit through build validation, static code analysis,
+        artifact packaging, repository storage, and team notifications.
+
+        The solution simulates real-world DevOps practices used by
+        enterprise engineering teams to improve software quality,
+        automate build processes, enforce quality gates, and maintain
+        artifact traceability across application releases.
+    </p>
+
+</section>
+
+<section class="project-section">
+
+<h2>Technology Stack</h2>
+
+<div class="tech-badges">
+
+        <span class="tech-badge">Jenkins</span>
+        <span class="tech-badge">SonarQube</span>
+        <span class="tech-badge">Nexus Repository</span>
+
+        <span class="tech-badge">GitHub</span>
+        <span class="tech-badge">GitHub Webhooks</span>
+        <span class="tech-badge">Maven</span>
+
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">AWS EC2</span>
+
+        <span class="tech-badge">Slack</span>
+        <span class="tech-badge">Linux</span>
+
+        <span class="tech-badge">CI/CD</span>
+        <span class="tech-badge">Quality Gates</span>
+
+</div>
+
+</section>
+
+<section class="project-section">
+
+<h2>Key Features</h2>
+<ul>
+    <li>Automated Continuous Integration pipeline using Jenkins</li>
+    <li>GitHub webhook-triggered build automation</li>
+    <li>Maven-based application build and dependency management</li>
+    <li>Automated unit testing and validation</li>
+    <li>Checkstyle integration for coding standards enforcement</li>
+    <li>Static code analysis using SonarQube</li>
+    <li>Quality Gate validation before artifact promotion</li>
+    <li>Automated artifact packaging and versioning</li>
+    <li>Artifact storage and management using Nexus Repository</li>
+    <li>Slack notifications for build and pipeline events</li>
+    <li>Dedicated AWS EC2 infrastructure for CI components</li>
+    <li>Centralized code quality and artifact lifecycle management</li>
+    <li>Enterprise-style software delivery workflow automation</li>    
+</ul>
+
+</section>
+
+<section class="project-section">
+
+    <h2>DevOps Highlights</h2>
+    <ul>
+        <li>Designed and implemented enterprise-style CI workflows</li>
+        <li>Integrated Jenkins, SonarQube, Nexus, and Slack into a unified pipeline</li>
+        <li>Automated software quality validation using SonarQube Quality Gates</li>
+        <li>Implemented artifact versioning and repository management</li>
+        <li>Configured GitHub webhook-driven build automation</li>
+        <li>Provisioned and managed AWS EC2 infrastructure for CI services</li>
+        <li>Established automated feedback loops through Slack notifications</li>
+        <li>Applied production-grade CI/CD and DevOps best practices</li>  
+    </ul>
+
+</section>
+
+<section class="project-section">
+
+    <h2>Project Outcome</h2>
+
+    <p>
+        This project demonstrates end-to-end Continuous Integration automation,
+        covering source control integration, build orchestration, code quality
+        analysis, artifact management, and team collaboration workflows. It
+        showcases practical experience with enterprise CI/CD tooling and modern
+        DevOps delivery practices widely adopted in production environments.
+    </p>
+
+</section>
+
+<section class="project-section project-buttons">
+    
+<a href="https://github.com/josephmj0303/jenkins-sonarqube-nexus-ci"
+   target="_blank"
+   class="btn-primary">
+
+   GitHub Repository
+
+</a>
+
+<a href="../projects.html"
+   class="btn-secondary">
+
+   ← Back to Projects
+
+</a>
+
+</section>
+
+</body>
+</html>
