@@ -164,6 +164,41 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Screenshot section */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .screenshot-item {
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
     </style>
 </head>
 
@@ -280,6 +315,44 @@
     <li>>Production-style deployment workflows and operational practices</li>    
 </ul>
 
+</section>
+
+<section class="project-section">
+    <h2>Screenshots</h2>
+
+<div class="screenshot-grid">
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/cicd.jpg" alt="">
+        <p class="screenshot-caption">Automated CI/CD Pipeline</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/cloudfront.jpg" alt="">
+        <p class="screenshot-caption">CloudFront Content Delivery</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/ec2-pm2.jpg" alt="">
+        <p class="screenshot-caption">Backend Services Running on EC2</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/homepage.jpg" alt="">
+        <p class="screenshot-caption">E-Commerce Frontend Application</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/route53.jpg" alt="">
+        <p class="screenshot-caption">Route 53 Domain Management</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/swagger.jpg" alt="">
+        <p class="screenshot-caption">REST API Documentation</p>
+    </div>
+
+</div>
 </section>
 
 <section class="project-section">
