@@ -151,6 +151,41 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Screenshot section */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .screenshot-item {
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 
@@ -236,6 +271,59 @@
 
 </div>
 
+</section>
+
+<section class="project-section">
+    <h2>Screenshots</h2>
+
+<div class="screenshot-grid">
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/all-workflows.png" alt="">
+        <p class="screenshot-caption">Automated CI/CD Workflows</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/ci-pipeline.png" alt="">
+        <p class="screenshot-caption">Security-Integrated Build Pipeline</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/dockerhub-images.png" alt="">
+        <p class="screenshot-caption">Container Image Registry</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/argocd.png" alt="">
+        <p class="screenshot-caption">GitOps Deployment Automation</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/k8s-cluster.png" alt="">
+        <p class="screenshot-caption">Kubernetes Application Platform</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/prometheus.png" alt="">
+        <p class="screenshot-caption">Metrics Collection & Monitoring</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/grafana.png" alt="">
+        <p class="screenshot-caption">Real-Time Application Observability</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/alerts.png" alt="">
+        <p class="screenshot-caption">Automated Incident Alerting</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/app-ui.png" alt="">
+        <p class="screenshot-caption">Production Application Deployment</p>
+    </div>
+
+</div>
 </section>
 
 <section class="project-section">
