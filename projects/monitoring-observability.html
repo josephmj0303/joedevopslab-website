@@ -164,6 +164,41 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Screenshot section */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .screenshot-item {
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 
@@ -264,6 +299,44 @@
 
 </div>
 
+</section>
+
+<section class="project-section">
+    <h2>Screenshots</h2>
+
+<div class="screenshot-grid">
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/alloy-dashboard.png" alt="">
+        <p class="screenshot-caption">Grafana Alloy Telemetry Pipeline</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/grafana-dashboard-app.png" alt="">
+        <p class="screenshot-caption">Application Performance Dashboard</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/grafana-dashboard-system.png" alt="">
+        <p class="screenshot-caption">Infrastructure Metrics Dashboard</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/prometheus-query.pngg" alt="">
+        <p class="screenshot-caption">Prometheus Metrics Query</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/prometheus-targets.png" alt="">
+        <p class="screenshot-caption">Prometheus Target Monitoring</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/slack-alerts.png" alt="">
+        <p class="screenshot-caption">Real-Time Alert Notifications</p>
+    </div>
+
+</div>
 </section>
 
 <section class="project-section">
