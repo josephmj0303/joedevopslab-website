@@ -164,6 +164,40 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Screenshot section */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .screenshot-item {
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -289,6 +323,44 @@
     <li>Production-ready Azure architecture design</li>    
 </ul>
 
+</section>
+
+<section class="project-section">
+    <h2>Screenshots</h2>
+
+<div class="screenshot-grid">
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/workflow-deployments.png" alt="">
+        <p class="screenshot-caption">GitHub Actions Deployment Pipelines</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/rg_overview.png" alt="">
+        <p class="screenshot-caption">Azure Resource Group Infrastructure</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/pg_db_overview.png" alt="">
+        <p class="screenshot-caption">Azure PostgreSQL Flexible Server</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/client-fe.png" alt="">
+        <p class="screenshot-caption">Customer E-Commerce Storefront</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/admin_fe.png" alt="">
+        <p class="screenshot-caption">Admin Management Dashboard</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/backend_api.png" alt="">
+        <p class="screenshot-caption">API Documentation and Endpoints</p>
+    </div>
+
+</div>
 </section>
 
 <section class="project-section">
