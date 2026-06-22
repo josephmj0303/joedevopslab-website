@@ -152,6 +152,41 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Screenshot section */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .screenshot-item {
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 
@@ -237,6 +272,64 @@
 
 </div>
 
+</section>
+
+<section class="project-section">
+    <h2>Screenshots</h2>
+
+<div class="screenshot-grid">
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/vprofile-application.png" alt="">
+        <p class="screenshot-caption">Production Application Running on EKS</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/pr-validation-pipeline.png" alt="">
+        <p class="screenshot-caption">Automated Pull Request Validation</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/deployment-pipeline.png" alt="">
+        <p class="screenshot-caption">End-to-End GitOps Deployment Pipeline</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/sonarqube-dashboard.png" alt="">
+        <p class="screenshot-caption">Continuous Code Quality Analysis</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/ecr-repo.png" alt="">
+        <p class="screenshot-caption">Versioned Container Image Registry</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/argocd-application.png" alt="">
+        <p class="screenshot-caption">GitOps Application Synchronization</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/argocd-resource-tree.png" alt="">
+        <p class="screenshot-caption">Declarative Kubernetes Resource Management</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/eks-cluster.png" alt="">
+        <p class="screenshot-caption">Managed Kubernetes Platform on AWS</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/pods-running.png" alt="">
+        <p class="screenshot-caption">Microservices Running Across Kubernetes Namespaces</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/slack-notification.png" alt="">
+        <p class="screenshot-caption">Real-Time Deployment Notifications</p>
+    </div>
+
+</div>
 </section>
 
 <section class="project-section">
