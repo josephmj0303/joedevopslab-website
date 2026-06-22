@@ -275,6 +275,24 @@
 </section>
 
 <section class="project-section">
+
+<h2>Key Features</h2>
+<ul>
+<li>Infrastructure provisioning using Terraform</li>
+<li>AWS EKS managed Kubernetes cluster</li>
+<li>GitHub Actions based CI/CD pipelines</li>
+<li>SonarQube quality gate validation</li>
+<li>Docker image build and publishing to Amazon ECR</li>
+<li>Helm-based Kubernetes deployments</li>
+<li>ArgoCD Auto Sync and Self-Healing</li>
+<li>AWS Load Balancer Controller (ALB Ingress)</li>
+<li>IRSA (IAM Roles for Service Accounts)</li>
+<li>Slack deployment notifications</li>
+</ul>
+
+</section>
+
+<section class="project-section">
     <h2>Screenshots</h2>
 
 <div class="screenshot-grid">
@@ -332,20 +350,39 @@
 </div>
 </section>
 
+
 <section class="project-section">
 
-<h2>Key Features</h2>
+<h2>Challenges & Learnings</h2>
+
 <ul>
-<li>Infrastructure provisioning using Terraform</li>
-<li>AWS EKS managed Kubernetes cluster</li>
-<li>GitHub Actions based CI/CD pipelines</li>
-<li>SonarQube quality gate validation</li>
-<li>Docker image build and publishing to Amazon ECR</li>
-<li>Helm-based Kubernetes deployments</li>
-<li>ArgoCD Auto Sync and Self-Healing</li>
-<li>AWS Load Balancer Controller (ALB Ingress)</li>
-<li>IRSA (IAM Roles for Service Accounts)</li>
-<li>Slack deployment notifications</li>
+    <li>
+        Designing a complete GitOps workflow required separating application source code from deployment manifests and ensuring ArgoCD continuously synchronized cluster state with Git repositories.
+    </li>
+
+    <li>
+        Managing image version updates between GitHub Actions, Amazon ECR and Helm charts was challenging. I implemented automated image tag updates in the GitOps repository to trigger deployments without manual intervention.
+    </li>
+
+    <li>
+        Configuring ArgoCD auto-sync and self-healing features helped maintain cluster consistency and recover from manual configuration drift.
+    </li>
+
+    <li>
+        Integrating SonarQube quality gates into the CI pipeline improved code quality and prevented deployments when quality standards were not met.
+    </li>
+
+    <li>
+        Working with AWS EKS provided deeper understanding of Kubernetes networking, ingress management, load balancers, service discovery and container orchestration.
+    </li>
+
+    <li>
+        Implementing Slack notifications improved deployment visibility by providing real-time feedback on pipeline execution and deployment status.
+    </li>
+
+    <li>
+        This project strengthened my practical knowledge of GitOps principles, Infrastructure as Code, Kubernetes operations and production-style CI/CD automation.
+    </li>
 </ul>
 
 </section>
