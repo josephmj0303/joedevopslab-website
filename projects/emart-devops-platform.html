@@ -24,7 +24,7 @@
         }
         .projects-hero {
             text-align: center;
-            padding: 120px 20px 60px;
+            padding: 120px 20px 30px;
         }
 
         .projects-hero h1 {
@@ -33,16 +33,28 @@
         }
 
         .projects-hero p {
-            max-width: 1000px;
+            text-align: left;
+            max-width: 1100px;
             margin: auto;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #cfcfcf;
         }
 
         .project-section {
             max-width: 1100px;
+            text-align: left;
             margin: 0 auto;
             padding: 1.5rem 2rem;
+        }
+
+        .project-section ul {
+            padding-left: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .project-section li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
         }
 
         .architecture-image {
@@ -96,6 +108,7 @@
         }
 
         .project-card p {
+            font-size: 1.2rem;
             line-height: 1.8;
         }
 
@@ -274,6 +287,20 @@
 </section>
 
 <section class="project-section">
+
+<h2>Key Features</h2>
+<ul>
+<li>Microservices Architecture</li>
+<li>Containerized Deployment</li>
+<li>GitOps Workflow</li>
+<li>Automated CI/CD</li>
+<li>Monitoring & Alerting</li>
+<li>Security Scanning</li>
+</ul>
+
+</section>
+
+<section class="project-section">
     <h2>Screenshots</h2>
 
 <div class="screenshot-grid">
@@ -326,19 +353,14 @@
 </div>
 </section>
 
-<section class="project-section">
+<h2>Key Challenges & Learnings</h2>
 
-<h2>Key Features</h2>
 <ul>
-<li>Microservices Architecture</li>
-<li>Containerized Deployment</li>
-<li>GitOps Workflow</li>
-<li>Automated CI/CD</li>
-<li>Monitoring & Alerting</li>
-<li>Security Scanning</li>
+    <li>Implemented GitOps deployment workflows using ArgoCD.</li>
+    <li>Integrated security scanning using Trivy.</li>
+    <li>Configured monitoring with Prometheus and Grafana.</li>
+    <li>Designed Kubernetes deployment manifests for multiple services.</li>
 </ul>
-
-</section>
 
 <section class="project-section project-buttons">
 
