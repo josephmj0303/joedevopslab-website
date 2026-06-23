@@ -3,4 +3,28 @@
   <url>
     <loc>https://joedevopslab.xyz/</loc>
   </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects.html</loc>  
+  </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects/emart-devops-platform.html</loc>
+  </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects/vprofile-gitops-platform.html</loc>
+  </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects/monitoring-observability.html</loc>
+  </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects/aws-cloud-native-ecommerce.html</loc>
+  </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects/azure-devops-platform.html</loc>
+  </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects/eks-dotnet-platform.html</loc>
+  </url>
+  <url>
+    <loc>https://joedevopslab.xyz/projects/jenkins-sonarqube-nexus.html</loc>
+  </url>
 </urlset>
