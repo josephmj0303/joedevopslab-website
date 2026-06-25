@@ -36,7 +36,7 @@ Visit:
 
 ## 👨‍💻 About Me
 
-I'm a DevOps Engineer with 2.5+ years of experience designing, automating, and managing cloud-native infrastructure.
+I'm a Cloud DevOps Engineer with hands-on experience designing, automating, and managing cloud-native infrastructure.
 
 My expertise includes:
 
