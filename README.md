@@ -36,7 +36,7 @@ Visit:
 
 ## 👨‍💻 About Me
 
-I'm a Cloud DevOps Engineer with hands-on experience designing, automating, and managing cloud-native infrastructure.
+I'm a DevOps Engineer with nearly 3 years of hands-on production experience in designing, automating, and managing cloud-native infrastructure.
 
 My expertise includes:
 
@@ -79,6 +79,7 @@ I enjoy building reliable, scalable, and automated platforms that improve softwa
 
 * Prometheus
 * Grafana
+* Loki
 * Slack
 
 ### Security & Quality
