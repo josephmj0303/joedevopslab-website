@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Joe DevOps Lab</title>
+
+    <link rel="stylesheet" href="../tooplate-titan-style.css">
+
+    <style>
+        .home-btn {
+            color: #FF9900;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #FF9900;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background: #FF9900;
+            color: #ffffff;
+        }
+        .projects-hero {
+            text-align: center;
+            padding: 120px 20px 30px;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-hero p {
+            text-align: left;
+            max-width: 1100px;
+            margin: auto;
+            font-size: 1.5rem;
+            color: #cfcfcf;
+        }
+
+        .project-section {
+            max-width: 1100px;
+            text-align: left;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+        }
+
+        .project-section ul {
+            padding-left: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .project-section li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .architecture-image {
+            width: 85%;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .stat-badge {
+            padding: 10px 20px;
+            border: 1px solid #ff9900;
+            border-radius: 30px;
+            color: #ff9900;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-card h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .project-buttons {
+            margin-top: 20px;
+        }
+
+        .project-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            background: #ff9900;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-badge {
+            border: 1px solid #ff9900;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: #ff9900;
+        }
+
+        .github-cta {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .github-cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ff9900;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Screenshot section */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .screenshot-item {
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">☸</div>
+                <div class="logo-text">Joe DevOps Lab</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#timeline">Journey</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#github">GitHub</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="project-hero">
+    <h1>AI DevOps Platform</h1>
+
+    <p>
+        AI-powered DevOps operations platform built with FastAPI, React, Kubernetes, PostgreSQL, Redis, and Ollama for intelligent log analysis, Kubernetes inspection, natural-language DevOps actions, and controlled operational automation.
+    </p>
+</section>
+
+<section class="project-section">
+
+    <h2>Architecture</h2>
+
+    <img src="../images/monitoring-architecture.png"
+         alt="AI DevOps Platform Architecture diagram"
+         class="architecture-image">
+</section>
+
+<section class="project-section">
+
+    <h2>Architecture Highlights</h2>
+    <ul>
+        <li>Grafana Alloy collects application and system telemetry.</li>
+        <li>Prometheus stores and queries time-series metrics.  </li>
+        <li>Loki centralizes and indexes application logs.</li>
+        <li>Grafana provides unified dashboards for metrics and logs.</li>
+        <li>Slack receives alerts generated from monitoring rules.</li>
+        <li>Python Flask application simulates production workloads.</li>
+        <li>AWS EC2 hosts the complete observability stack.</li>   
+    </ul>
+
+</section>
+
+<section class="project-section">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        This project demonstrates the implementation of a modern Monitoring and Observability Platform designed to provide end-to-end visibility into application and infrastructure health.
+        The platform collects metrics using Prometheus, aggregates logs using Loki, and visualizes operational data through Grafana dashboards. Grafana Alloy serves as the telemetry collection agent, while a Python Flask application generates real-world monitoring data and log events.
+        The solution is deployed on AWS EC2 and integrates Slack notifications for proactive alerting, enabling rapid detection and response to operational issues.
+        The project showcases key observability concepts including metrics collection, centralized logging, dashboard visualization, alert management, and real-time monitoring workflows commonly used in production environments.
+    </p>
+
+</section>
+
+<section class="project-section">
+
+<h2>Technology Stack</h2>
+
+<div class="tech-badges">
+
+<span class="tech-badge">Prometheus</span>
+<span class="tech-badge">Grafana</span>
+<span class="tech-badge">Loki</span>
+<span class="tech-badge">Grafana Alloy</span>
+<span class="tech-badge">Python Flask</span>
+<span class="tech-badge">AWS EC2</span>
+<span class="tech-badge">Slack</span>
+
+</div>
+
+</section>
+
+<section class="project-section">
+
+<h2>Key Features</h2>
+<ul>
+    <li>Real-Time Infrastructure Monitoring</li>
+    <li>Application Metrics Collection with Prometheus</li>
+    <li>Centralized Log Aggregation using Loki</li>
+    <li>Telemetry Collection with Grafana Alloy</li>
+    <li>Interactive Grafana Dashboards</li>
+    <li>Python Flask Sample Application Monitoring</li>
+    <li>AWS EC2 Based Deployment Architecture</li>
+    <li>Slack Alert Notifications</li>
+    <li>Operational Health Visualization</li>
+    <li>Production-Style Observability Workflow</li>
+</ul>
+
+</section>
+
+<section class="project-section">
+    <h2>Screenshots</h2>
+
+<div class="screenshot-grid">
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/alloy-dashboard.png" alt="">
+        <p class="screenshot-caption">Grafana Alloy Telemetry Pipeline</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/grafana-dashboard-app.png" alt="">
+        <p class="screenshot-caption">Application Performance Dashboard</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/grafana-dashboard-system.png" alt="">
+        <p class="screenshot-caption">Infrastructure Metrics Dashboard</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/prometheus-query.png" alt="">
+        <p class="screenshot-caption">Prometheus Metrics Query</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/prometheus-targets.png" alt="">
+        <p class="screenshot-caption">Prometheus Target Monitoring</p>
+    </div>
+
+    <div class="screenshot-item">
+        <img src="../images/project-images/slack-alerts.png" alt="">
+        <p class="screenshot-caption">Real-Time Alert Notifications</p>
+    </div>
+
+</div>
+</section>
+
+<section class="project-section">
+
+<h2>Key Challenges & Learnings</h2>
+
+<ul>
+    <li>
+        Collecting meaningful infrastructure and application metrics required careful configuration of Prometheus exporters and scrape targets across multiple services.
+    </li>
+
+    <li>
+        Designing Grafana dashboards that provided actionable insights rather than excessive data helped improve troubleshooting and operational visibility.
+    </li>
+
+    <li>
+        Configuring Alertmanager required balancing alert sensitivity to avoid excessive notifications while still detecting critical infrastructure issues.
+    </li>
+
+    <li>
+        Centralizing logs using Loki improved troubleshooting efficiency by allowing metrics and logs to be analyzed from a single observability platform.
+    </li>
+
+    <li>
+        Monitoring Kubernetes workloads provided practical experience in tracking pod health, resource utilization, application performance and cluster stability.
+    </li>
+
+    <li>
+        Implementing proactive monitoring helped identify resource bottlenecks before they affected application availability and user experience.
+    </li>
+
+    <li>
+        This project strengthened my understanding of observability practices, incident response, performance monitoring and production operations.
+    </li>
+</ul>
+
+</section>
+
+<section class="project-section project-buttons">
+
+<a href="https://github.com/josephmj0303/monitoring-and-observability"
+   target="_blank"
+   class="btn-primary">
+
+   GitHub Repository
+
+</a>
+
+<a href="../projects.html"
+   class="btn-secondary">
+
+   ← Back to Projects
+
+</a>
+
+</section>
+
+</body>
+</html>
