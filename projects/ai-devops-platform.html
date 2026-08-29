@@ -250,7 +250,7 @@
 
     <h2>Architecture</h2>
 
-    <img src="../images/monitoring-architecture.png"
+    <img src="../images/ai-devops-architecture.png"
          alt="AI DevOps Platform Architecture diagram"
          class="architecture-image">
 </section>
@@ -259,13 +259,15 @@
 
     <h2>Architecture Highlights</h2>
     <ul>
-        <li>Grafana Alloy collects application and system telemetry.</li>
-        <li>Prometheus stores and queries time-series metrics.  </li>
-        <li>Loki centralizes and indexes application logs.</li>
-        <li>Grafana provides unified dashboards for metrics and logs.</li>
-        <li>Slack receives alerts generated from monitoring rules.</li>
-        <li>Python Flask application simulates production workloads.</li>
-        <li>AWS EC2 hosts the complete observability stack.</li>   
+        <li>React provides the web-based DevOps dashboard and AI Assistant interface.</li>
+        <li>FastAPI serves as the backend API and orchestration layer.</li>
+        <li>Ollama provides local LLM inference for AI-assisted DevOps operations.</li>
+        <li>Kubernetes integration enables cluster inspection and controlled operational actions.</li>
+        <li>PostgreSQL stores projects, users, and persistent DevOps action history.</li>
+        <li>Redis provides application-level caching and service support.</li>
+        <li>AI-assisted workflows interpret natural-language operational requests before executing approved actions.</li>
+        <li>Health endpoints provide visibility into application, database, Redis, and AI service availability.</li>
+        <li>Docker provides containerized application and service deployment.</li>
     </ul>
 
 </section>
@@ -275,10 +277,9 @@
     <h2>Project Overview</h2>
 
     <p>
-        This project demonstrates the implementation of a modern Monitoring and Observability Platform designed to provide end-to-end visibility into application and infrastructure health.
-        The platform collects metrics using Prometheus, aggregates logs using Loki, and visualizes operational data through Grafana dashboards. Grafana Alloy serves as the telemetry collection agent, while a Python Flask application generates real-world monitoring data and log events.
-        The solution is deployed on AWS EC2 and integrates Slack notifications for proactive alerting, enabling rapid detection and response to operational issues.
-        The project showcases key observability concepts including metrics collection, centralized logging, dashboard visualization, alert management, and real-time monitoring workflows commonly used in production environments.
+        This project demonstrates an AI-assisted DevOps platform designed to bring intelligent operational capabilities into a unified DevOps workflow. Instead of relying entirely on manual Kubernetes commands and log inspection, the platform provides a web interface where operational information can be inspected and DevOps actions can be initiated through natural-language requests.
+        The platform combines a FastAPI backend, React frontend, Kubernetes integration, PostgreSQL persistence, Redis, and a locally hosted Ollama LLM. AI capabilities are focused on practical DevOps workflows including application log analysis and interpretation of natural-language operational requests.
+        The platform can inspect Kubernetes cluster resources such as nodes, pods, and deployments, while controlled DevOps actions can be executed through the platform and recorded in persistent action history. This provides a practical demonstration of how AI can be integrated with existing DevOps tooling without replacing established infrastructure and operational controls.
     </p>
 
 </section>
@@ -289,13 +290,15 @@
 
 <div class="tech-badges">
 
-<span class="tech-badge">Prometheus</span>
-<span class="tech-badge">Grafana</span>
-<span class="tech-badge">Loki</span>
-<span class="tech-badge">Grafana Alloy</span>
-<span class="tech-badge">Python Flask</span>
-<span class="tech-badge">AWS EC2</span>
-<span class="tech-badge">Slack</span>
+<span class="tech-badge">FastAPI</span>
+<span class="tech-badge">React</span>
+<span class="tech-badge">Kubernetes</span>
+<span class="tech-badge">PostgreSQL</span>
+<span class="tech-badge">Redis</span>
+<span class="tech-badge">Ollama</span>
+<span class="tech-badge">Docker</span>
+<span class="tech-badge">Python</span>
+
 
 </div>
 
@@ -305,16 +308,20 @@
 
 <h2>Key Features</h2>
 <ul>
-    <li>Real-Time Infrastructure Monitoring</li>
-    <li>Application Metrics Collection with Prometheus</li>
-    <li>Centralized Log Aggregation using Loki</li>
-    <li>Telemetry Collection with Grafana Alloy</li>
-    <li>Interactive Grafana Dashboards</li>
-    <li>Python Flask Sample Application Monitoring</li>
-    <li>AWS EC2 Based Deployment Architecture</li>
-    <li>Slack Alert Notifications</li>
-    <li>Operational Health Visualization</li>
-    <li>Production-Style Observability Workflow</li>
+    <li>AI-Assisted Log Analysis</li>
+    <li>Natural-Language DevOps Action Interpretation</li>
+    <li>Kubernetes Cluster Inspection</li>
+    <li>Kubernetes Node, Pod & Deployment Visibility</li>
+    <li>Controlled Kubernetes Operational Actions</li>
+    <li>AI Action Preview Before Execution</li>
+    <li>Persistent DevOps Action History</li>
+    <li>React-Based DevOps Dashboard</li>
+    <li>FastAPI REST API</li>
+    <li>PostgreSQL Data Persistence</li>
+    <li>Redis Integration</li>
+    <li>Local LLM Inference with Ollama</li>
+    <li>Application & Service Health Monitoring</li>
+    <li>Containerized Application Architecture</li>
 </ul>
 
 </section>
@@ -325,33 +332,23 @@
 <div class="screenshot-grid">
 
     <div class="screenshot-item">
-        <img src="../images/project-images/alloy-dashboard.png" alt="">
-        <p class="screenshot-caption">Grafana Alloy Telemetry Pipeline</p>
+        <img src="../images/project-images/dashboard.png" alt="">
+        <p class="screenshot-caption">AI DevOps Dashboard</p>
     </div>
 
     <div class="screenshot-item">
-        <img src="../images/project-images/grafana-dashboard-app.png" alt="">
-        <p class="screenshot-caption">Application Performance Dashboard</p>
+        <img src="../images/project-images/ai-assistant.png" alt="">
+        <p class="screenshot-caption">AI Assistant</p>
     </div>
 
     <div class="screenshot-item">
-        <img src="../images/project-images/grafana-dashboard-system.png" alt="">
-        <p class="screenshot-caption">Infrastructure Metrics Dashboard</p>
+        <img src="../images/project-images/action-history.png" alt="">
+        <p class="screenshot-caption">AI Analysis History</p>
     </div>
 
     <div class="screenshot-item">
-        <img src="../images/project-images/prometheus-query.png" alt="">
-        <p class="screenshot-caption">Prometheus Metrics Query</p>
-    </div>
-
-    <div class="screenshot-item">
-        <img src="../images/project-images/prometheus-targets.png" alt="">
-        <p class="screenshot-caption">Prometheus Target Monitoring</p>
-    </div>
-
-    <div class="screenshot-item">
-        <img src="../images/project-images/slack-alerts.png" alt="">
-        <p class="screenshot-caption">Real-Time Alert Notifications</p>
+        <img src="../images/project-images/action-intent.png" alt="">
+        <p class="screenshot-caption">AI Action Intent</p>
     </div>
 
 </div>
@@ -363,31 +360,31 @@
 
 <ul>
     <li>
-        Collecting meaningful infrastructure and application metrics required careful configuration of Prometheus exporters and scrape targets across multiple services.
+        Integrating an LLM into a DevOps workflow required clear separation between AI interpretation and actual infrastructure operations.
     </li>
 
     <li>
-        Designing Grafana dashboards that provided actionable insights rather than excessive data helped improve troubleshooting and operational visibility.
+        Designing controlled AI-assisted actions helped ensure that natural-language requests could be reviewed before execution.
     </li>
 
     <li>
-        Configuring Alertmanager required balancing alert sensitivity to avoid excessive notifications while still detecting critical infrastructure issues.
+        Kubernetes API integration provided practical experience in exposing cluster inspection and operational capabilities through an application layer.
     </li>
 
     <li>
-        Centralizing logs using Loki improved troubleshooting efficiency by allowing metrics and logs to be analyzed from a single observability platform.
+        Persisting DevOps actions created an auditable history of operational activity rather than treating AI interactions as temporary requests.
     </li>
 
     <li>
-        Monitoring Kubernetes workloads provided practical experience in tracking pod health, resource utilization, application performance and cluster stability.
+        Running the LLM locally with Ollama demonstrated an approach for integrating AI capabilities without relying entirely on external AI APIs.
     </li>
 
     <li>
-        Implementing proactive monitoring helped identify resource bottlenecks before they affected application availability and user experience.
+        Building health checks across the application, database, Redis, and AI services improved operational visibility and reliability.
     </li>
 
     <li>
-        This project strengthened my understanding of observability practices, incident response, performance monitoring and production operations.
+        The project strengthened practical understanding of combining AI, APIs, Kubernetes automation, observability, and DevOps workflows into a single platform.
     </li>
 </ul>
 
@@ -395,7 +392,7 @@
 
 <section class="project-section project-buttons">
 
-<a href="https://github.com/josephmj0303/monitoring-and-observability"
+<a href="https://github.com/josephmj0303/ai-devops-platform"
    target="_blank"
    class="btn-primary">
 
