@@ -91,6 +91,25 @@ I enjoy building reliable, scalable, and automated platforms that improve softwa
 
 ## 🚀 Featured Projects
 
+### 🔥 AI DevOps Platform
+
+AI-powered DevOps platform that combines LLM-assisted operations with Kubernetes inspection, log analysis, and controlled DevOps actions through a web interface.
+
+* FastAPI
+* React
+* Kubernetes
+* PostgreSQL
+* Redis
+* Ollama
+* Docker
+* Python
+
+Repository:
+
+🔗 https://github.com/josephmj0303/ai-devops-platform
+
+---
+
 ### 🏗️ VProfile GitOps Platform on AWS EKS
 
 Production-grade GitOps implementation of the VProfile application on AWS EKS using:
