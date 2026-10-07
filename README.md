@@ -36,7 +36,7 @@ Visit:
 
 ## 👨‍💻 About Me
 
-I'm a DevOps Engineer with nearly 3 years of hands-on production experience in designing, automating, and managing cloud-native infrastructure.
+I'm a DevOps Engineer with 5+ years of combined Cloud and DevOps hands-on production experience in designing, automating, and managing cloud-native infrastructure.
 
 My expertise includes:
 
